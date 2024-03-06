@@ -1,9 +1,9 @@
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-from demo.spiders.example import ExampleSpider
+from demo.spiders.ximalaya import XimalayaSpider
 def run():
     process = CrawlerProcess(get_project_settings())
-    process.crawl(ExampleSpider)
+    process.crawl(XimalayaSpider)
     process.start()
 
 if __name__ == '__main__':
